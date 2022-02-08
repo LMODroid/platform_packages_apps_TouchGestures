@@ -6,6 +6,7 @@ android_app {
     resource_dirs: ["res"],
     manifest: "AndroidManifest.xml",
     system_ext_specific: true,
+    static_libs: ["VendorSupport-preference"],
     platform_apis: true,
     certificate: "platform",
     dex_preopt: {
