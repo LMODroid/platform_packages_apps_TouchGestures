@@ -14,7 +14,7 @@
     <protected-broadcast android:name="com.android.touch.gestures.UPDATE_SETTINGS" />
 
     <uses-sdk
-        android:targetSdkVersion="29"/>
+        android:targetSdkVersion="30"/>
 
     <application
         android:label="@string/touchscreen_gesture_settings_title"
