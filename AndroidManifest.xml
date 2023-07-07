@@ -14,14 +14,14 @@
     <protected-broadcast android:name="com.android.touch.gestures.UPDATE_SETTINGS" />
 
     <uses-sdk
-        android:targetSdkVersion="30"/>
+        android:targetSdkVersion="31"/>
 
     <application
         android:label="@string/touchscreen_gesture_settings_title"
         android:persistent="true"
         android:supportsRtl="true">
 
-        <receiver android:name=".BootReceiver" android:enabled="true">
+        <receiver android:name=".BootReceiver" android:enabled="true" android:exported="true">
             <intent-filter android:priority="999999">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
