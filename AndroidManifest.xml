@@ -18,7 +18,6 @@
 
     <application
         android:label="@string/touchscreen_gesture_settings_title"
-        android:persistent="true"
         android:supportsRtl="true">
 
         <receiver android:name=".BootReceiver" android:enabled="true" android:exported="true">
