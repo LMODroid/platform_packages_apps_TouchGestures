@@ -17,3 +17,15 @@ android_app {
     },
     privileged: true,
 }
+
+genrule {
+   name: "TouchGestures-res",
+   tools: ["soong_zip"],
+   srcs: [
+       "res/**/*"
+   ],
+   out: ["TouchGestures-res.zip"],
+   cmd: "INPUTS=($(in)) && "
+       + "RES_DIR=$$(dirname $$(dirname $${INPUTS[0]})) && "
+       + "$(location soong_zip) -o $(out) -C $$RES_DIR -D $$RES_DIR"
+}
